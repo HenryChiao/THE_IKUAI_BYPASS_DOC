@@ -219,9 +219,6 @@ switch_main_exec="curl -sk -o /dev/null --data 'Main DNS is UP!' --retry 3 https
 > **参数说明**
 > - `[dns]`：主 DNS，国外域名转发至 OpenClash FakeIP DNS
 > - `[fall]`：兜底 DNS，国内域名走国内解析
-> - `qtime`：查询超时（ms），超时后降级至 `[fall]`
-> - `aaaa = no`：屏蔽 IPv6 解析，防止 AAAA 泄漏
-> - `boguspriv = 1`：过滤非法私有地址反向解析
 
 ### 4.3 配置 systemd 自启动
 
